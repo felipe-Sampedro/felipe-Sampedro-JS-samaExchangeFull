@@ -1,0 +1,22 @@
+
+footer{
+    // position:absolute;
+    // bottom:0px;
+    margin-top: auto;
+    background-color: lightgrey;
+    height: auto;
+    width:100%; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    .footer__right{
+        margin: 1rem;
+    }
+    .footer__about{
+        display: flex;
+        h4{
+            padding: 1rem;
+        }
+    }
+}

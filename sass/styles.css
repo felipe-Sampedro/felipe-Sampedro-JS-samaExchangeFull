@@ -1,0 +1,388 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+body {
+  background-color: rgba(245, 245, 245, 0.368627451);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  width: 100%;
+}
+.header nav {
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.header nav .header__logo {
+  display: flex;
+  align-items: center;
+  background-color: white;
+}
+.header nav .header__logo img {
+  width: 100px;
+  height: auto;
+}
+.header nav .header__logo h1 {
+  font-size: 2em;
+}
+.header nav .header__button {
+  width: 150px;
+  height: 40px;
+  font-weight: 600;
+  margin: 10px;
+}
+
+div.title {
+  text-align: center;
+  padding: 2em 0 2em 0;
+}
+div.title .title__text {
+  font-weight: 600;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  height: auto;
+}
+section .section__main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
+  border: solid 2px black;
+  width: 75%;
+  margin-bottom: 20px;
+}
+section .section__main .section__btns1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+section .section__main .section__btns2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+section .section__main .moneda {
+  width: 5rem;
+  height: 1.8rem;
+  font-weight: 600;
+  font-size: 1em;
+  padding: 0 0 0 10px;
+  margin: 10px;
+}
+section .section__main .cantidad {
+  width: 10rem;
+  height: 1.6rem;
+  font-size: 1em;
+  padding: 0 0 0 10px;
+  margin: 10px 10px 10px 0;
+}
+section .section__main .section__reverse .btn {
+  display: flex;
+  align-items: center;
+  border-style: none;
+  background-color: transparent;
+  cursor: pointer;
+  transition: transform 0.7s;
+  transform-style: preserve-3d;
+  transform: rotate(-360deg);
+}
+section .section__main .section__reverse .btn img {
+  padding: 5px;
+  width: 3.5rem;
+  height: auto;
+}
+section .section__main .section__reverse .flipped {
+  border-style: none;
+  background-color: transparent;
+  cursor: pointer;
+  transition: transform 0.7s;
+  transform-style: preserve-3d;
+  transform: rotate(360deg);
+}
+section .section__main .section__reverse .flipped img {
+  padding: 5px;
+  width: 3.5rem;
+  height: auto;
+}
+section .section__main .section__description {
+  margin: 15px;
+  font-weight: 600;
+}
+
+footer {
+  margin-top: auto;
+  background-color: lightgrey;
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+footer .footer__right {
+  margin: 1rem;
+}
+footer .footer__about {
+  display: flex;
+}
+footer .footer__about h4 {
+  padding: 1rem;
+}
+
+@media (min-Width: 768px) {
+  .header {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    width: 100%;
+  }
+  .header nav {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .header nav .header__logo {
+    display: flex;
+    align-items: center;
+    background-color: white;
+  }
+  .header nav .header__logo img {
+    width: 100px;
+    height: auto;
+  }
+  .header nav .header__logo h1 {
+    font-size: 2em;
+  }
+  .header nav .header__button {
+    width: 150px;
+    height: 40px;
+    font-weight: 600;
+    margin: 10px;
+  }
+  div.title {
+    text-align: center;
+    padding: 2em 0 2em 0;
+  }
+  div.title .title__text {
+    font-weight: 600;
+  }
+  section {
+    display: flex;
+    justify-content: center;
+    height: auto;
+  }
+  section .section__main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: row;
+    border: solid 2px black;
+    width: 78%;
+    margin-bottom: 20px;
+  }
+  section .section__main .section__btns1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  section .section__main .section__btns2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  section .section__main .moneda {
+    width: 5rem;
+    height: 1.8rem;
+    font-weight: 600;
+    font-size: 1em;
+    padding: 0 0 0 10px;
+    margin: 10px;
+  }
+  section .section__main .cantidad {
+    width: 10rem;
+    height: 1.6rem;
+    font-size: 1em;
+    padding: 0 0 0 10px;
+    margin: 10px 0 10px 10px;
+  }
+  section .section__main .section__reverse .btn {
+    display: flex;
+    align-items: center;
+    border-style: none;
+    background-color: transparent;
+    cursor: pointer;
+    transition: transform 0.7s;
+    transform-style: preserve-3d;
+    transform: rotate(-360deg);
+  }
+  section .section__main .section__reverse .btn img {
+    padding: 5px;
+    width: 3.5rem;
+    height: auto;
+  }
+  section .section__main .section__reverse .flipped {
+    border-style: none;
+    background-color: transparent;
+    cursor: pointer;
+    transition: transform 0.7s;
+    transform-style: preserve-3d;
+    transform: rotate(360deg);
+  }
+  section .section__main .section__reverse .flipped img {
+    padding: 5px;
+    width: 3.5rem;
+    height: auto;
+  }
+  section .section__main .section__description {
+    margin: 10px;
+    font-weight: 600;
+    width: 310px;
+  }
+  footer {
+    margin-top: auto;
+    background-color: lightgrey;
+    height: 5rem;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+  footer .footer__about {
+    display: flex;
+  }
+  footer .footer__about h4 {
+    padding: 1.5rem;
+  }
+}
+@media (min-Width: 1024px) {
+  .header nav {
+    flex-direction: row;
+  }
+  .header nav .header__logo img {
+    width: 100px;
+    height: auto;
+  }
+  .header nav .header__logo h1 {
+    font-size: 3em;
+  }
+  .header nav .header__button {
+    width: 150px;
+    height: 40px;
+    font-weight: 600;
+  }
+  div.title {
+    text-align: center;
+    padding: 4em 0 4em 0;
+  }
+  div.title .title__text {
+    font-weight: 600;
+  }
+  section {
+    display: flex;
+    justify-content: center;
+    height: 12rem;
+  }
+  section .section__main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    border: solid 2px black;
+    width: 75%;
+    height: 12rem;
+  }
+  section .section__main .moneda {
+    width: 10rem;
+    height: 3rem;
+    font-weight: 600;
+    font-size: 1em;
+    padding: 0 0 0 10px;
+  }
+  section .section__main .cantidad {
+    width: 13rem;
+    height: 2.7rem;
+    font-size: 1em;
+    padding: 0 0 0 10px;
+  }
+  section .section__main .section__reverse .btn {
+    border-style: none;
+    background-color: transparent;
+    cursor: pointer;
+    transition: transform 0.7s;
+    transform-style: preserve-3d;
+    transform: rotate(-360deg);
+  }
+  section .section__main .section__reverse .btn img {
+    padding: 20px;
+    width: 5rem;
+    height: auto;
+  }
+  section .section__main .section__reverse .flipped {
+    border-style: none;
+    background-color: transparent;
+    cursor: pointer;
+    transition: transform 0.7s;
+    transform-style: preserve-3d;
+    transform: rotate(360deg);
+  }
+  section .section__main .section__reverse .flipped img {
+    padding: 20px;
+    width: 5rem;
+    height: auto;
+  }
+  section .section__main .section__description {
+    display: flex;
+    justify-content: center;
+    margin: 15px;
+    font-weight: 600;
+    width: 300px;
+  }
+  footer {
+    margin-top: auto;
+    background-color: lightgrey;
+    height: 5rem;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+  footer .footer__about {
+    display: flex;
+  }
+  footer .footer__about h4 {
+    padding: 1.5rem;
+  }
+}

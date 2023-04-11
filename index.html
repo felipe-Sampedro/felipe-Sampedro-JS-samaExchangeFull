@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exchange</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./sass/styles.css">
+
+</head>
+<body>
+
+    <header class="header">
+        <nav class="header__nav">
+            <div class="header__logo">
+                <img src="./assets/images/logoExchange1nbg.png"  alt="">
+                <h1>SAMA EXCHANGE</h1>
+            </div>
+            <button class="header__button">Aplicacion Movil</button>
+        </nav>
+
+    </header>
+
+    <div class="title">
+        <h2 class="title__text">¡EMPIEZA A CONVERTIR!</h2>
+    </div>
+
+    
+
+    <section class="section">
+        <div class="section__main">
+            <div class="section__btns1">
+                <select class="moneda" name="moneda_uno" id="moneda_uno"></select>         
+                <input class="cantidad" type="number" id="cantidad_uno" placeholder="0" value="1">
+            </div>
+            <div class="section__reverse" id="reverse">
+                <button class="btn" id="btn">
+                    <img src="./assets/images/reverse1.png" alt="">
+                </button>
+            </div>
+            <div class="section__btns2">
+                <select class="moneda" name="moneda_dos" id="moneda_dos"></select>
+                <input class="cantidad" type="number" id="cantidad_dos" value="1">
+            </div>
+            <div class="section__description">
+                <p id="details"></p>
+            </div>
+        </div>
+    </section>
+    
+    <footer class="footer">
+        <div class="footer__right">
+            <p><strong>© 2023 SamaExchange FSG</strong></p>
+        </div>
+        <div class="footer__about">
+            <h4>Sobre Nosotros</h4>
+            <h4>Aplicacion Movil</h4>
+        </div>
+    </footer>
+    <script src="./main.js"></script>
+</body>
+</html>

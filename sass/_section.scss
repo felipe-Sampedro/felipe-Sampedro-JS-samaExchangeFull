@@ -1,0 +1,85 @@
+
+
+div.title{
+    text-align: center;
+    padding: 2em 0 2em 0;
+    .title__text{
+        font-weight: 600;
+    }
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    height: auto;
+    .section__main{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        flex-direction: column;
+        border: solid 2px black;
+        width: 75%;
+        margin-bottom: 20px;
+        .section__btns1{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .section__btns2{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .moneda{
+            width: 5rem;
+            height: 1.8rem;
+            font-weight: 600;
+            font-size: 1em;
+            padding: 0 0 0 10px;
+            margin: 10px;
+        }
+        .cantidad{
+            width: 10rem;
+            height: 1.6rem;
+            font-size: 1em;
+            padding: 0 0 0 10px;
+            margin: 10px 10px 10px 0;
+        }
+        .section__reverse{
+            .btn{
+                display: flex;
+                align-items: center;
+                border-style: none;
+                background-color:transparent;
+                cursor: pointer;
+                transition: transform 0.7s;
+                transform-style: preserve-3d;
+                transform: rotate( -360deg );
+
+                img{
+                    padding: 5px;
+                    width: 3.5rem;
+                    height: auto;
+                }
+            }
+            .flipped{
+                border-style: none;
+                background-color:transparent;
+                cursor: pointer;
+                transition: transform 0.7s;
+                transform-style: preserve-3d;
+                transform: rotate( 360deg );
+                img{
+                    padding: 5px;
+                    width: 3.5rem;
+                    height: auto;
+                }
+            }
+        }
+        .section__description{
+            margin: 15px;
+            font-weight: 600;
+        }
+    }
+}
